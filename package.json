@@ -3,8 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +27,5 @@
   "bugs": {
     "url": "https://github.com/ThatSkiPatroller/Note-Taker/issues"
   },
-  "homepage": "https://github.com/ThatSkiPatroller/Note-Taker#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/ThatSkiPatroller/Note-Taker#readme"
 }
