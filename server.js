@@ -34,13 +34,30 @@ app.get('/api/notes', (req, res) => {
   res.json(notes);
 });
 
-let id = 1;
 // Make new notes that takes json
 app.post('/api/notes', (req, res) => {
-    fs.readFile('/db.json', 'utf8', (err, notes) => {
+    let notes = parse();
+    console.log(notes);
+    let id = notes.length > 0 ? notes[notes.length-1].id + 1 : 1;
+    req.body.id = id;
+    console.log(req.body);
+    notes.push(req.body);
+    console.log(notes);
+    fs.writeFile(__dirname + '/db.json', JSON.stringify(notes), (err) => {
       if (err) throw err;
+    });
+    res.json(notes);
 });
+
+app.delete('/api/notes/:id', (req, res) => {
+  let notes = parse();
+  let newNotes = notes.filter(note => note.id != req.params.id);
+  fs.writeFile(__dirname + '/db.json', JSON.stringify(newNotes), (err) => {
+    if (err) throw err;
+  });
+  res.json(newNotes);
 });
+
 
 // Start server
 app.listen(PORT, () => {
