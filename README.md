@@ -1,7 +1,7 @@
 # Note-Taker
 https://github.com/undefined/undefined
 # Description
-This project is a note-taker app that allows the user to create, save, and delete notes all through an interactive front-end.  
+This project is a note-taker app that allows the user to create, save, and delete notes all through an interactive front-end. For technologies used, this app uses an Express server with GET, POST and DELETE routes as well as a local json database to interact with. 
 # Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
