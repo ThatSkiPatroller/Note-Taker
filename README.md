@@ -12,11 +12,11 @@ This project is a note-taker app that allows the user to create, save, and delet
 # Installation
 To install the necessary dependencies, run "npm install" in the terminal, in the correct directory for the project.
 # Usage
-To use this application, run "node server.js" in the terminal, open your browser and go to localhost:8080 to get the applicaiton running. This application will also be deployed on Heroku at https://polar-beach-03042.herokuapp.com/.
+To use this application, run "node server.js" in the terminal, open your browser and go to localhost:8080 to get the applicaiton running. This application is currently deployed on Heroku at https://polar-beach-03042.herokuapp.com/.
 # License
 
 # Contributing
-Contributors:
+Contributors: N/A
 # Testing
 There are currently no test suites for this application.
 # Questions
